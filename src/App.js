@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './Header';
-// import IsLoadingAndError from './IsLoadingAndError';
-import Footer from './Footer';
+import IsLoadingAndError from './IsLoadingAndError';
+import Footer from './Footer.js';
 import { withAuth0 } from '@auth0/auth0-react';
 import {
   BrowserRouter as Router,
@@ -10,16 +10,22 @@ import {
 } from "react-router-dom";
 import MyFavoriteBooks from './myFavoriteBooks'
 import Login from './Login'
-import Profile from './components/Profile';
+import Profile from './components/Profile.js';
 
 
 
 
 class App extends React.Component {
+  constructor(props){
+    super(props)
+    this.sate={
+      Bookdata:''
+    }
+  }
 
   render() {
     const { user, isAuthenticated } = this.props.auth0;
-    // console.log('app',isAuthenticated)
+    console.log('app',isAuthenticated)
 
     return(
       <>

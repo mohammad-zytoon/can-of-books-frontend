@@ -2,11 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import { Auth0Provider } from "@auth0/auth0-react";
-// // import LoginButton from './components/LoginButton.js';
-// import LogoutButton from './components/LogoutButton.js';
-// import Profile from './components/Profile.js';
-// import MyFavoriteBooks from './myFavoriteBooks'
-// import Login from './Login'
+import LoginButton from './components/LoginButton.js';
+import LogoutButton from './components/LogoutButton.js';
+import Profile from './components/Profile.js';
+import MyFavoriteBooks from './myFavoriteBooks'
+import Login from './Login'
 
 
 ReactDOM.render(
