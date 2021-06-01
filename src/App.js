@@ -11,6 +11,7 @@ import {
 import MyFavoriteBooks from './myFavoriteBooks'
 import Login from './Login'
 import Profile from './components/Profile.js';
+import BookFormModal from './components/BookFormModal.js'
 
 
 
@@ -25,7 +26,6 @@ class App extends React.Component {
 
   render() {
     const { user, isAuthenticated } = this.props.auth0;
-    console.log('app',isAuthenticated)
 
     return(
       <>
